@@ -1,0 +1,24 @@
+-let thisURL=`https://scxn.github.io/${ingredient}`;
+-let thisTopic=`%E2%9D%9D${ingredient}%E2%9D%9E%0ASCXN%20Solution%20${index+1}%20of%207%0A%22${directions[index]}%22%0A%0A`;
+-let shareIntro=`SCXN%20put%20together%20a%20list%20of%207%20elements%20that%20make%20the%20perfect%20website.%20%0A%20Here%27s%20a%20snippet%E2%80%94%0A%0A`;
+
+a(target='_BLANK' href=`https://telegram.me/share/url?url=${thisURL}`)#shareTelegram.shareTo
+    img(alt='Share to Telegram' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/jpDAaUblQOXchSJzPKHXRlpS')#telegramShare.shareIcons
+a(target='_BLANK' href=`https://www.tumblr.com/widgets/share/tool?canonicalUrl=${thisURL}`)#shareTumblr.shareTo
+    img(alt='Share to share to Tumblr' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/MzcphckOtgNcfaCWWMTFWTqW')#tumblrShare.shareIcons
+a(target='_BLANK' href=`https://www.snapchat.com/scan?attachmentUrl=${thisURL}`)#shareSnapchat.shareTo
+    img(alt='Share to Snapchat' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/xFrUwDvsaVZIbfazKCtoDTFW')#snapchatShare.shareIcons
+a(target='_BLANK' href=`http://pinterest.com/pin/create/button/?url=${thisURL}`)#sharePinterest.shareTo
+    img(alt='Share to Pinterest' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/teaOSXqaxuRJQPfguVRnlMvw')#pinterestShare.shareIcons
+a(target='_BLANK' href=`https://news.ycombinator.com/submitlink?u=${thisURL}`)#shareHackerNews.shareTo
+    img(alt='Share to Hacker News' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/SVLDnVNzbcvXNPMPLURUDlsW')#hackerNewsShare.shareIcons
+a(target='_BLANK' href=`https://gab.com/compose?text=${shareIntro}${thisTopic}More%20at%20&url=${thisURL}`)#shareGab.shareTo
+    img(alt='Share to Gab' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/OItnYjzufLGGJkjeNfKBnPVF')#gabShare.shareIcons
+a(target='_BLANK' href=`https://www.facebook.com/sharer/sharer.php?u=${thisURL}`)#shareFacebook.shareTo
+    img(alt='Share to Facebook' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/NMejiZcQHtlvCztevoxgbdwU')#facebookShare.shareIcons
+a(target='_BLANK' href=`mailto:?subject=Check%20this%20out%21%20%E2%80%94%20Marketing%20%26%20web%20design-related&body=${shareIntro}${thisTopic}More%20at%20${thisURL}%0A`)#shareEmail.shareTo
+    img(alt='Share to Email' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/hakXcKyERGfNQzQdLCdJvhwp')#emailShare.shareIcons
+a(target='_BLANK' href=`https://www.blogger.com/blog_this.pyra?t=&u=${thisURL}`)#shareBlogger.shareTo
+    img(alt='Share to Blogger' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/CmnMpuIjTJIGmooINvfxqjSI')#bloggerShare.shareIcons
+a(target='_BLANK' href=`https://twitter.com/intent/tweet?url=${thisURL}`)#shareTwitter.shareTo
+    img(alt='Share to Twitter' src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/YJGFsTofAbmgHYoTMyybZBwL')#twitterShare.shareIcons

@@ -1,0 +1,24 @@
+extends layout
+block content
+  include nav
+  header#cover.cover.sH.sC.container-fluid 
+    section.row   
+      article.col-12 
+        item.p-0.m-0.sC
+          a(href='#solution' data-toggle='tooltip' data-placement='top' title='Enter').textAlignCenter.p-0.m-0.tB.charm.hL
+            b.mB.f5 SC
+              i(style='font-size: calc(1em + .6em); display: inline-block;height: .5em;').mB.f2 x
+              | N 
+            h2.mM Web Publishing
+  main.sH.container-fluid.maxed
+    section.row.pt-5
+      margin.col-2
+      article.col-md-8.p-md-5
+        item.p-md-5.my-md-5
+          div#solution.textAlignCenter 
+            include logo
+          h2.f2.mM.w1.pb-5.textAlignCenter Solution 
+          include solutionList
+      margin.col-2
+  include footer
+  include ultimate

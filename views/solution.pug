@@ -1,0 +1,42 @@
+extends layout
+block content
+  include nav
+  main.container-fluid.maxed.pt-5.mt-5
+    section.row
+      include advanceShare
+      include heading
+      menu.col-2.col-md-3
+        item.solutionsPage.m-0.p-0
+          include solutionList
+      article.col-10.col-md-9.p-md-5.sH.sC.sticky.topTop
+        div.landingStinger.py-3.mt-0.ps-5.ms-5.textAlignRight.f2.flex.flexAlignStart.dwarf
+          -let solutionStinger=`The Internet has grown to dramatically define our relationship with media over the past twenty years.  Nowadays, it seems completely normal to live with twenty-four-hour data, whether it’s through online stores, social media apps or streaming games.`
+          | #{solutionStinger}
+          span(style='width:1.3em;').index.sM.p-3.m-0.darkBlue.tW.f4.sC.ms-3 &nbsp;
+        include details
+        div(id=`${ingredient}`).landingDetails
+          h2.bM.caps Solution 1-7
+          p There are several methods for designing websites these days, but some basic principles should always apply.
+          p.dwarf.lH3 Businesses can no longer afford to ignore the power of the web.  It has become crucial at every turn.  Whether it’s GPS directions, reading the news, or discovering a dynamite place to dine, we rely heavily on the internet to unpack a world of options, to whittle away at the contemporary to-do list.
+          p.beam.f2.sM.lH3.mt-5.p-4.ps-5 But in reality, arranging a beautiful web layout is as easy as your willingness to sit down and plan.  In this article, I will point to seven key principles you might consider when crafting a gorgeous site.
+          aside.w1.textAlignRight.mb-1.py-5
+            a(href=`/Engaging`).tB.outlined.noHover.wB Next→
+          aside.w1.textAlignRight.pb-5
+              a(href=`/${ingredients[6]}`).tB Forward
+                  i.fa-solid.fa-circle-chevron-right.dwarf.tB
+              a(href=`https://scxn-blog.tumblr.com/tagged/Solution`).tB <br>More on this topic 
+                  i.fa-solid.fa-square-rss.dwarf.tB
+          aside.textAlignRight.w1.mb-4
+            h2.sM Share SCXN Solutions 1 through 7:
+            -let thisURL=`https://scxn.github.io/Solution`;
+            -let thisTopic=`%22${solutionStinger}%22%0A%0A`;
+            -let shareIntro=`SCXN%20put%20together%20a%20list%20of%207%20elements%20that%20make%20the%20perfect%20website.%0AHere%27s%20a%20snippet%E2%80%94%0A%0A%E2%9D%9D${description}%E2%9D%9E%0A`;
+            include shareLanding
+        div#share
+        p.fyiCase.tB.outlinedImportant.dwarf.w1 #{fyi[5]}
+        aside.mb-4.publicKeys.fyiReferenceCase.diminutive.footnote.lH2 #{fyiReference[5]}
+  each f, index in fyi   
+    .hide.fs=f
+    .hide.frs=fyiReference[index]
+  include footer
+  include ultimate

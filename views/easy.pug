@@ -1,0 +1,38 @@
+extends layout
+block content
+  include nav
+  main.container-fluid.maxed.pt-5.mt-5
+    section.row
+      include advanceShare
+      div.textAlignCenter.textAlignLeft
+        include logo
+      h2.f2.mM.w1.pb-2.textAlignLeft Solution /
+      menu.col-2.col-md-3
+        item.solutionsPage.m-0.p-0
+          include solutionList
+      article.col-10.col-md-9.p-md-5.sH.sC.sticky.topTop
+        div.landingStinger.py-3.mt-0.ps-5.ms-5.textAlignRight.f2.flex.flexAlignCenter.dwarf #{directions[6]}
+          span(style='width:1.3em;').index.sM.p-3.m-0.darkBlue.tW.f4.sC.ms-3 7
+        include details
+        div(id=`${ingredient}`).landingDetails
+          h2.bM.caps #{ingredients[6]}
+          p.dwarf.lH3 #{detailedInstructions[6]}
+          p.beam.f2.sM.lH3.mt-5.p-4.ps-5 #{results[6]}
+          aside.w1.textAlignRight.mb-1.py-5
+            a(href=`/solution`).tB.outlined.noHover.wB Start
+          aside.w1.textAlignRight.pb-5
+              a(href=`/${ingredients[5]}`).tB Previous 
+                  i.fa-solid.fa-circle-chevron-left.dwarf.tB
+              a(href=`https://scxn-blog.tumblr.com/tagged/${ingredients[6]}`).tB <br>More on this topic 
+                  i.fa-solid.fa-square-rss.dwarf.tB
+          aside.textAlignRight.w1.mb-4
+            h2.sM Share "Easy", Solution 7:
+            include share
+        div#share
+        p.fyiCase.tB.outlinedImportant.dwarf.w1 #{fyi[6]}
+          aside.publicKeys.fyiReferenceCase.diminutive.footnote.lH2 #{fyiReference[6]}
+  each f, index in fyi   
+    .hide.fs=f
+    .hide.frs=fyiReference[index]
+  include footer
+  include ultimate

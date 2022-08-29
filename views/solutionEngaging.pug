@@ -1,0 +1,12 @@
+ol#accordion.list-group.sC.sexy.engaging
+    include theSolution
+    each ingredient, index in ingredients 
+        li.sC.w1.py-2
+            a(href=`#${ingredient}` role="button" data-toggle="collapse" aria-expanded="true" aria-controls=`${ingredient}`).solutions.list-group-item.list-group-item-action.noDecoration.noHover.w1.tB.flex.flexJustifySplay
+                div.indexCase.p-0.m-0.flex.flexJustifyRight.indexCase.pe-4
+                    span(style='width:1.3em;').index.sM.p-3.m-0.bB.tW.f4.sC #{index+1} 
+                div.ingredientCase.p-0.m-0.flex.flexJustifyLeft.flexAlignCenter #{ingredient}
+            item(id=`${ingredient}` class=`${ingredient}` aria-labelledby=`heading${ingredient}` data-parent=`#accordion`).flake.collapse
+                p.directions.py-5=directions[index]
+                div.w1.textAlignRight.mb-1.py-5
+                    a(href=`/solution#${ingredient}`).tB.outlined.noHover.wB.me-5 More→

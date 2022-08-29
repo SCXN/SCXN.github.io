@@ -1,0 +1,30 @@
+footer#contact.py-5.sB.tW
+    section.maxed.my-5.container-fluid 
+      article.row
+        margin.d-none.d-md-block.col-md-2 
+        item.col-md-8.p-2.flex.flexCol.pb-5.px-4.px-md-0.pb-md-0
+            h3.col-12.col-md-8.f4.bM.textAlignCenter Contact
+            p.textAlignCenter Thank you for visiting.  Updates happen frequently so consider subscribing by providing your email address below.
+        margin.d-none.d-md-block.col-md-2
+        item.col-md-4.p-2.bullNosedTopLeft.bullNosedBottomLeft.flex.flexCol.sC
+            div.callcenter.pB6
+                h3.f2.textAlignCenter.mM Office
+                p.textAlignCenter Mon—Fri, 8a-4p
+                ul.nav
+                    li
+                        a(href='tel:+13604775426' role='button' data-toggle='tooltip' data-placement='top' title='Call us').tW.noHover
+                            i.fa-solid.fa-phone-flip.mB
+                    li.ms-4
+                        a(href='mailto:scxn@protonmail.com' role='button' data-toggle='tooltip' data-placement='top' title='Email us').tW.noHover
+                            i.fa-solid.fa-envelope-open-text.mB
+        item.col-md-4.p-2.flex.flexCol
+            include contactForm
+        item.col-md-4.sC
+            div.textAlignLeft.smallCenter.p-2.px-md-4.px-lg-5
+                h3.f2.textAlignCenter.mM Social Media
+                include socials
+        statement.col-12.pt-5.textAlignCenter
+            include logo
+            -var thisYear = new Date().getFullYear();
+                p.f2.textAlignCenter.mt-5(style='font-size: 17pt;').tW © 2022—#{thisYear} Kai Lavatai.<br>
+                    | All rights reserved.

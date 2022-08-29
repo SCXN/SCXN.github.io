@@ -1,0 +1,42 @@
+extends layout
+block content
+  include nav
+  main.container-fluid.maxed.pt-5.mt-5
+    section.row
+      include advanceShare
+      div.textAlignCenter.textAlignLeft
+        include logo
+      h2.f2.mM.w1.pb-2.textAlignLeft News /
+      menu.col-12.col-md-3
+        item.engagingPage.m-0.p-0
+          h5.dwarf Recent articles:
+          ul.otherArticlesMenu.sexy.mb-4
+            each title, index in newsTitles 
+              li.py-2.ms-2.nW.h100.special.flex
+                a(href=`${newsLinks[index]}`).tB.diminutive.lH1.w1 "#{title}",  &nbsp;
+      article.col-12.col-md-9.p-md-5.sH.sC.sticky.topTop
+        div.landingStinger.pb-5.mt-0.ps-5.ms-5.textAlignRight.f2.flex.flexAlignCenter.flexJustifyEnd.dwarf.flexWrap
+          stinger.stinger.f1   
+            != newsBodies[0]
+          span().index.p-3.m-0.darkBlue.tW.f4.sC.ms-3.dwarf #{newsDates[0]}
+        abstract.abstract.mb-4.f2.beam.pt-3.ps-4
+          != newsBodies[0]
+        feature.feature.more
+          h6.f2.i.dwarf by 
+            span.f4.dwarf.caps Kai Lavatai
+          h1.f4.bM.caps  #{newsTitles[0]}
+          != newsBodies[0]
+          aside   
+            h2.sM Share this:
+            include shareNews
+            div#share
+          aside.w1.textAlignRight.mb-1.py-5
+            a(href=`https://scxn-blog.tumblr.com`).tB.noHover.wB.me-3 Visit the blog→
+        div.w1.flex.flexJustifyStart
+          p.footnote.fyiCase.tB.dwarf.w1
+            | topics:   
+            each topic in newsTopics[0]
+              a(href=`https://scxn-blog.tumblr.com/tagged/${topic}`).top.inline.f2.tB.sM ##{topic}
+              | ,  &nbsp;
+  include footer
+  include ultimate

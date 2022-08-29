@@ -1,0 +1,22 @@
+each ingredient, index in ingredients
+    div(id=`${ingredient}`).ingredientDetails.hide
+        h2.bM.caps #{index+1}.  #{ingredient}
+        p.dwarf.lH3 #{detailedInstructions[index]}
+        p.beam.f2.sM.lH3.mt-5.p-4.ps-5 #{results[index]}
+        aside.w1.textAlignRight.mb-1.pt-5
+            if ingredient==='Easy'
+                a(href=`/Solution`).tB.outlined.noHover.wB Start
+            else 
+                a(href=`/${ingredients[index+1]}`).tB.outlined.noHover.wB Next→
+        aside.w1.textAlignRight.py-5
+            if ingredient==='Engaging'
+                a(href=`/${ingredients[6]}`).tB previous 
+                    i.fa-solid.fa-circle-chevron-left.dwarf.tB
+            else 
+                a(href=`/${ingredients[index-1]}`).tB previous 
+                    i.fa-solid.fa-circle-chevron-left.dwarf.tB
+            a(href=`https://scxn-blog.tumblr.com/tagged/${ingredients[index]}`).tB <br>More on this topic 
+                i.fa-solid.fa-square-rss.dwarf.tB
+        aside.textAlignRight.w1.mb-4
+            h2.sM Share "#{ingredient}", Solution #{index+1}:
+            include share

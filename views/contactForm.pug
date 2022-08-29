@@ -1,0 +1,10 @@
+form#emailer.modal-form.emailer.px-0(method='POST' action='send' enctype ='multipart/form-data')
+    label(for="name").tW.w1 Name:
+    input#name.form-input.name(type='text', placeholder='Name' name='name' value="" required='true').w1
+    label(for="address").tW.w1 Email address:
+    input#address.form-input.address(type='text', placeholder='name@address.com' name='address' value="" required='true').w1
+    label(for="subject").tW.w1 Subject:
+    input#subject.form-input.subject(type='text', placeholder='Re:' name='subject' value="" required='true').w1
+    label(for="message").tW.w1 Comment:
+    textarea#message.form-input.message.bullNosed(type='text', placeholder=' ...' name='message' value="" required='true').w1.mb-4
+    button.btn.submit-btn(type='submit' value='submit').tW.mb-4.w1.caps.f4.mM.tW Submit

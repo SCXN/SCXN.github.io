@@ -1,0 +1,55 @@
+@media (orientation: portrait){
+
+}
+@media (max-width: 290px){
+    nav.w5{
+    width: 99% !important;
+    }
+}    
+@media (max-width: 575px){
+    .theTitle{
+        padding-top: 27px;
+        font-size: 27pt;
+    }
+    .sub{
+        font-size: 13pt;
+    }
+    nav.w5{
+        width: 90% !important;
+    }
+    .redLined{
+        border-right: none;
+    }
+    /* .bullNosed,
+    .bullNosedTop,
+    .bullNosedBottom,
+    .bullNosedTopLeft,
+    .bullNosedTopRight,
+    .bullNosedBottomRight,
+    .bullNosedBottomLeft{border-radius: 0px;} */
+    ul.sexy>*{
+        text-align: center;
+    }
+    .bordered.flake{
+        border: none;
+    }
+}
+@media (max-width: 767px){
+    .menuPic{
+        max-height: 33vh;
+        padding-bottom: 27px;
+    }
+    .bullNosed.adapt{
+        border-radius: 0px;
+    }
+}
+@media (max-height: 500px){
+
+}
+@media (min-width:768px){
+    .textAlignCenter.big{
+        text-align: Left;
+    }
+}
+@media (min-width:900px){
+} 

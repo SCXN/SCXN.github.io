@@ -1,6 +1,6 @@
 window.onscroll = function() {toppy()};
 function toppy() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
+    if (document.body.scrollTop > 251 || document.documentElement.scrollTop > 251 ) {
       document.getElementById("goToTop").style.transform=" translateX(0px)";
       document.getElementById("goToTop2").classList.add('revealed');
     } else {

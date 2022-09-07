@@ -2,10 +2,10 @@
 :root{
 /*colors*/
 	--cF: #1f1928;				--cB: #fffbed;
-	--cA: #ffffff;				--cH: #4f1643;
+	--cA: #3d3d3d;				--cH: #4f1643;
 	--c1: #575349;  			--c2: #abaced;
 	--c3 :#3c3847;				--c4: #54432b;
-	--c5: #e2b2b0;				--c6: #6e71a5;
+	--c5: #ba7472;				--c6: #6e71a5;
 /*fonts*/
 	--f1: normal normal lighter 17pt/1em 'Playfair Display', Times, serif;
 	--f2: italic normal lighter 17pt/1em 'Times New Roman', Times, serif;
@@ -235,6 +235,8 @@ cover{background-color: white;}
 }
 .compositor>*{grid-column: 1;grid-row: 1;}
 
+.invert{filter:invert(100%);}
+
 .wash1{filter: opacity(27%);}
 .wash2{filter: opacity(45%);}
 .wash3{filter: opacity(76%);}
@@ -397,7 +399,7 @@ ul.nav.grid{
 .lH5{line-height: 2.7em;}	.lH6{line-height: 2rem;}
 
 .floatLeft{float: left;}
-
+.floatRight{float: right;}
 .japanese{
 	-webkit-writing-mode: vertical-rl;
 	-moz-writing-mode: vertical-rl;

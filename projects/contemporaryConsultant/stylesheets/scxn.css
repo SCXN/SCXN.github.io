@@ -516,6 +516,7 @@ h1{
 	border-radius: 100%;	
 }
 a.shareTo{
+	display: flex;
 	margin: 0 auto !important;
 	padding: 0px !important;
 	width: 45px !important; 

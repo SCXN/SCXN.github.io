@@ -515,7 +515,15 @@ h1{
 .socials{width: 54px;height: 54px;
 	border-radius: 100%;	
 }
-.shareIcons{width: 45px; height: 45px;}
+.shareTo{
+	margin: 0 auto !important;
+	padding: 0px !important;
+}
+.shareIcons{
+	width: 45px; 
+	height: 45px;
+	margin: 0 auto !important; 
+	padding: 0px !important;}
 
 a.noHover:hover {background-color:transparent;}
 a.noDecoration:hover {text-decoration: none;}

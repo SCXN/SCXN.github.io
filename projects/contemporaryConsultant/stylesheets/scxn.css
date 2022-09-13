@@ -518,6 +518,8 @@ h1{
 .shareTo{
 	margin: 0 auto !important;
 	padding: 0px !important;
+	width: 45px; 
+	height: 45px;
 }
 .shareIcons{
 	width: 45px; 

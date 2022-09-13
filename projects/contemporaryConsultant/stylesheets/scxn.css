@@ -515,11 +515,12 @@ h1{
 .socials{width: 54px;height: 54px;
 	border-radius: 100%;	
 }
-.shareTo{
+a.shareTo{
 	margin: 0 auto !important;
 	padding: 0px !important;
-	width: 45px; 
-	height: 45px;
+	width: 45px !important; 
+	height: 45px !important;
+	overflow: hidden;
 }
 .shareIcons{
 	width: 45px; 

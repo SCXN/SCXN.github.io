@@ -453,7 +453,7 @@ a:hover{
 	background-color:transparent;
 	border-color: black;
 }
-.current{background-color: var(--cH);}
+.current{background-color: var(--cH)!important;}
 a:active{background-color: var(--cH);}
 a:focus{color: var(--cH);}
 a:visited{color: var(--c6)}
@@ -516,8 +516,9 @@ h1{
 	border-radius: 100%;	
 }
 a.shareTo{
-	margin: -2.9px!important;/*unique to static HTML comp for space*/
+	margin: 0px 0px !important;
 	padding: 0px !important;
+	display: inline;
 	width: 45px !important; 
 	height: 45px !important;
 	overflow: hidden;
@@ -526,7 +527,8 @@ a.shareTo{
 	width: 45px; 
 	height: 45px;
 	margin: 0 auto !important; 
-	padding: 0px !important;}
+	padding: 0px !important;
+}
 
 a.noHover:hover {background-color:transparent;}
 a.noDecoration:hover {text-decoration: none;}
@@ -825,3 +827,6 @@ li.flex.w1.ms-0.textAlignLeft.flexJustifyLeft.i.f2{
         letter-spacing:.123vw;
 		white-space: nowrap;
     }
+	.navLink{
+		color: white;
+	}

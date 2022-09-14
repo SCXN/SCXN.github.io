@@ -516,7 +516,7 @@ h1{
 	border-radius: 100%;	
 }
 a.shareTo{
-	margin: 0px 0px !important;
+	margin: -2.9 !important; /*unique to static html fix spacing*/
 	padding: 0px !important;
 	display: inline;
 	width: 45px !important; 
@@ -719,7 +719,7 @@ footer.fixed{
 .galleryMenu .galleryMenuSelectors{
 	width: 81px;
 	height: 81px;
-	margin: .27em 0 0 .27em;
+	margin: .27em 0px .27em; /* unique static HTML spacing fix*/
 }
 .galleryMenu .galleryMenuSelectors:first-of-type{
 	margin-left: 8px;

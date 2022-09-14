@@ -762,6 +762,9 @@ item.figure figure:first-of-type img{
 	object-fit: cover;
 	object-position: 50% 50%;border-radius: 4.5px;
 }
+.shareTo{
+	margin: -2.8px !important;
+}
 .shareIcons{
 	width: 36px; height: 36px;
 }
@@ -944,4 +947,7 @@ main.container-fluid.maxed.pt-5.mt-5{
 	font: var(--f2);
 	font-size: 17pt;
 	color: white;
+}
+#contact > section > article > item.col-md-8.p-2.flex.flexCol.pb-5.px-4.px-md-0.pb-md-0 > p > a{
+ color: white;
 }

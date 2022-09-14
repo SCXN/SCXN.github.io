@@ -516,7 +516,7 @@ h1{
 	border-radius: 100%;	
 }
 a.shareTo{
-	margin: 0 auto !important;
+	margin: -2.9px!important;/*unique to static HTML comp for space*/
 	padding: 0px !important;
 	width: 45px !important; 
 	height: 45px !important;

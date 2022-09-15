@@ -108,6 +108,7 @@ cover{background-color: white;}
 .monolith{border-right:var(--s2) solid var(--cH); padding: 2px var(--s1) 2px 0px;}
 .footnote{border-top: 1px solid var(--c2);}
 .line{height: 1.23em; background-color: black; display:block;width: 100%;}
+.based{border-top: 1px solid rgba(114, 114, 114, 0.521);}
 .bullNosed{border-radius: 4.5px;}
 .bullNosedTop{
 	border-top-left-radius: 4.5px;

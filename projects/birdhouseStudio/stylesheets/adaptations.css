@@ -1,0 +1,84 @@
+@media (orientation: portrait){
+.galleryItem figure{
+	width: 33.27%;
+	height: 12.5vh;
+  }
+}
+@media (max-width: 575px){
+    .redLined{
+        border-right: none;
+    }
+    statement{
+        background-color: rgba(44, 116, 87, 0.468);
+    }
+    .bullNosed,
+    .bullNosedTop,
+    .bullNosedBottom,
+    .bullNosedTopLeft,
+    .bullNosedTopRight,
+    .bullNosedBottomRight,
+    .bullNosedBottomLeft{border-radius: 0px;}
+    ul.sexy>*{
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    .shareIcons{
+        width:39px;height:39px;
+    }
+    .slideUnder>*{
+        position: relative;
+        z-index: 1;
+        filter: opacity(27%);
+    }
+    .slideOver>*{
+        position: relative;
+        z-index: 2;
+    }
+    .bullNosed.adapt{
+        border-radius: 0px;
+    }
+    #news > section  > article > aside > h2{
+        font-size: 27pt;
+    }
+    .shareIcons.birdShares{
+        width:45px;height: 45px;
+    }
+}
+@media (max-height: 500px) and (max-width:900px){
+    .usa{display: none;}
+}
+@media (max-height: 500px){
+    .shareIcons{
+        width:39px;height:39px;
+    }
+    .horBreak{padding-top:39px;margin-top: 39px;
+        flex-direction: row;
+    }
+    wrapper.compositor.col-sm-12.px-3.px-md-0{
+        max-width: 50%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    article#galleryBG.w1.bullNosedTop{
+    min-height: 70vh;
+    }
+    item.m-0.px-3.px-md-0.pb-1.pt-1.col-sm-12.mx-0.flex.flexAlignEnd.flexJustifyStart.sSBB.bullNosedBottom{
+        max-width:50%;	
+    }
+    div.galleryItem{
+        height: 100%;
+        min-height: 50vh;
+    }
+    .galleryMoreInfo{
+        min-height: 70vh;
+    }
+    .galleryMoreInfo p{
+        margin: 1em;
+        font-size: 9pt;
+    }
+    div.col-md-6.h100.hSWB{
+        width: 100%;
+    }
+}

@@ -1,8 +1,37 @@
-// Wait for window load
-window.onload = function() {
-        
-    $(".se-pre-con").fadeOut("slow");
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	window.onload = function() {
+        $(".se-pre-con").fadeOut("slow");;
+      };
+
+//Tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+//Copy wallet addresses to clipboard
+let copyMe=document.querySelectorAll('.copyWallet')
+let publicKeys=document.querySelectorAll('.publicKeys')
+let walletAddresses=[]
+publicKeys.forEach(pushKeys)
+copyMe.forEach(copyWallet)
+function pushKeys(item){
+    walletAddresses.push(item.innerHTML)
 }
+function copyWallet(item, index){
+    item.onclick=function(){
+        navigator.clipboard.writeText(walletAddresses[index])
+    }
+}
+
+//Wallet popovers
+$(function () {
+    $('[data-toggle="popover"]').popover({
+      container: 'body',
+      trigger: 'focus'
+    })
+  })
+
 //Hide nav bar on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -166,8 +195,7 @@ function initMap() {
   }
   
   window.initMap = initMap;
-
-//fullCalendar
+  
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {

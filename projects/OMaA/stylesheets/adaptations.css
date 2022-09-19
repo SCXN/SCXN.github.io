@@ -1,0 +1,108 @@
+@media (orientation: portrait){
+.galleryItem figure{
+	width: 33.27%;
+	height: 12.5vh;
+  }
+}
+@media (max-width: 575px){
+    .redLined{
+        border-right: none;
+    }
+    statement{
+        background-color: rgba(44, 116, 87, 0.468);
+    }
+    .bullNosed,
+    .bullNosedTop,
+    .bullNosedBottom,
+    .bullNosedTopLeft,
+    .bullNosedTopRight,
+    .bullNosedBottomRight,
+    .bullNosedBottomLeft{border-radius: 0px;}
+    ul.sexy>*{
+        text-align: center;
+    }
+    li.bijou{
+        display: none;
+    }
+    logo.bijou{
+        display: block;
+    }
+    .bordered.flake{
+        border: none;
+    }
+}
+@media (max-width: 767px){
+    .slideUnder>*{
+        position: relative;
+        z-index: 1;
+        filter: opacity(27%);
+    }
+    .slideOver>*{
+        position: relative;
+        z-index: 2;
+    }
+    .bullNosed.adapt{
+        border-radius: 0px;
+    }
+    #news > article > aside > h2{
+        font-size: 27pt;
+    }
+    .shareIcons.birdShares{
+        width:45px;height: 45px;
+    }
+    .mega{
+        width: 100%;
+        position: relative;
+        border-radius: 4.5px;
+    }
+    .mega{
+        top: 147%;
+        left: 0vw;
+    }
+    .col3{
+        column-count: 1;
+    }
+}
+@media (max-height: 500px){
+    .horBreak{padding-top: 0px;margin-top: 0px;
+        flex-direction: row;
+    }
+    wrapper.compositor.col-sm-12.px-3.px-md-0{
+        max-width: 50%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    article#galleryBG.w1.bullNosedTop{
+    min-height: 70vh;
+    }
+    item.m-0.px-3.px-md-0.pb-1.pt-1.col-sm-12.mx-0.flex.flexAlignEnd.flexJustifyStart.sSBB.bullNosedBottom{
+        max-width:50%;	
+    }
+    div.galleryItem{
+        height: 100%;
+        min-height: 50vh;
+    }
+    .galleryMoreInfo{
+        min-height: 70vh;
+    }
+    .galleryMoreInfo p{
+        margin: 1em;
+        font-size: 9pt;
+    }
+    div.col-md-6.h100.hSWB{
+        width: 100%;
+    }
+}
+@media (min-width:768px){
+    .sWB.sO{background-color: transparent;}
+    .slideDown1{transition:transform .123s;}
+    #slideDown2{transform: translateY(120px)}
+    #slideUp{transform: translateY(-120px)}
+    #crowdFunding{font-size: 27pt;}
+}
+
+@media (min-width:900px){
+    #crowdFunding{
+        font-size: 55pt;}
+} 

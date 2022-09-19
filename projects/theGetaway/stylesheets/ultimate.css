@@ -1,0 +1,23 @@
+.ultimate{
+    display: block;
+    z-index: 999;
+    margin-bottom: 0px !important;
+    font-family: 'Times New Roman', Times, serif !important;    
+    padding-bottom: 0px;
+}
+.ultimate:hover{
+        background-color:white !important;
+}
+
+.ultimate> a{
+    font-family: 'Times New Roman', Times, serif !important;
+    padding-bottom: 0px;
+}
+.ultimate a:hover{
+    color: white !important;
+}
+a.tW:hover{
+
+    color: var(--cH) !important;
+
+}

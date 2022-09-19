@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Getaway</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="icon" type="image/x-icon" href="/projects/theGetaway/images/favicon.png"><!--openGraph--><meta property="og:locale" content="en_US"><meta property="og:site_name" content="The Getaway Bar &amp; Grill, Sequim WA"><meta property="og:title" content="&quot;The Getaway&quot;: Restaurant Website Frontend by SCXN"><meta property="og:type" content="article"><meta property="og:url" content="https:///scxn.github.io/projects/theGetaway"><meta property="og:image" content="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/icYvSsWxUdzJIpiFdCaCgjLu"><meta property="og:description" content="A lively frontend with rich, saturated wine-soaked colors; suitable for restaurant, lounge and nightspot homepages."><!--styles--><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"><!--Our styles start--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="/projects/theGetaway/stylesheets/scxn.css"><link rel="stylesheet" href="/projects/theGetaway/stylesheets/ultimate.css"><link rel="stylesheet" href="/projects/theGetaway/stylesheets/thisIsADemo.css"><link rel="stylesheet" href="/projects/theGetaway/stylesheets/style.css"></head>
+    <body>
+        <div class="w1 px-0 flex" id="thisIsADemoReturnHome">
+            <p class="flex flexRow flexAlignCenter textAlignStart h100 w1 py-0 my-0">
+                <a class="tW h100 noDecoration ms-0 sC px-5 py-0" href="/projects">
+                    <i class="h100 sC my-0 dwarf">← Return to /projects</i>
+                </a>
+            </p>
+            <a class="chevron tW my-0 flex flexAlignCenter noDecoration w1" href="#enter" role="button" data-toggle="tooltip" data-placement="left" title="Enter">
+                <i class="d-none d-lg-inline f5 diminutive caps ex">Enter</i>
+                <i class="d-block d-lg-none fa-solid fa-chevron-down p-3 inline dwarf"></i>
+            </a>
+            <p class="flex flexRow dwarf mb-1 my-0 py-0 tW flexAlignCenter flexJustifyCenter noFlexWrap me-3 w1">
+                <span class="lH2" id="thisIsADemoReturnHomeLogoCase">
+                    <span class="d-none d-md-inline">You are viewing an&nbsp;</span>
+                    <span class="translateDown lH3 f5 dwarf">SC</span>
+                    <i class="f6 i b">x</i>
+                    <span class="translateDown f5 dwarf">N
+                    </span>
+                    <span class="d-none d-md-inline">project&nbsp;</span>
+                    <span class="d-inline d-md-none">&nbsp; D</span>
+                    <span class="d-none d-md-inline">d</span>emo<span class="d-none d-md-inline">nstration.</span>
+                </span>
+            </p>
+        </div>
+        <a id="top"></a>
+        <a id="enter"></a>
+        <div class="se-pre-con"></div>
+        <div class="goToTop superCenterer" id="goToTop">
+            <a href="#top">
+                <img src="/projects/theGetaway/images/toTop.png"><br><b class="superCenterer">Back to top↑</b>
+            </a>
+        </div>
+        <header class="headingAlt" id="headingAlt">
+            <section>
+                <article class="superCenterer"><img src="/projects/theGetaway/images/theGetawayLogo.png" id="logoSm"><a href="/projects/theGetaway/">
+                        <h3 class="return" id="return">← return home</h3>
+                    </a>
+                </article>
+            </section>
+            <nav class="navigatorAlt" id="navigatorAlt">
+                <ul>
+                    <li>
+                        <a class="pt-2" href="/projects/theGetaway/menus/breakfast">Breakfast</a>
+                    </li>
+                    <li>
+                        <a class="pt-2" href="/projects/theGetaway/menus/lunch">Lunch</a>
+                    </li>
+                    <li class="flyOutCase">
+                        <a class="flyPop pt-2" id="flyPop">Dinner</a>
+                        <ul class="flyOut hide" id="flyOut">
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#entrees">Entrées</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#appetizers">Appetizers</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#beer">Beer</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#wine">Wine</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#desserts">Dessert</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <script src="/projects/theGetaway/javascripts/flyPop.js"></script>
+        </header>
+        <script src="/projects/theGetaway/javascripts/resizeHeaderAlt.js"></script>
+        <main class="menu lunchMain">
+            <section class="container-fluid menuCaseWrapper">
+                <article class="row menuCase">
+                    <div class="col-sm-8 menuTitle">
+                        <h1>Lunch
+                        </h1>
+                        <p>
+                            <h2>11a&mdash;3p</h2>
+                            <ul>
+                                <li>
+                                    <b>Cheeseburger Royale&nbsp;</b>
+                                    <i>$17</i>
+                                </li>
+                                <ul>
+                                    <li>1/3 lbs ground chuck patty cooked to your liking, American cheese, cheddar cheese, ketchup, mayo, mustard, dill pickle relish, bacon bits, grilled onions, shredded iceberg lettuce, and paper-thin tomato slices on our toasted house bun.&nbsp; Choose two sides.&nbsp; House lettuce wrap or open-face option available by request</li>
+                                </ul>
+                                <li>
+                                    <b>Chicken Sandwich Royale</b>&nbsp;<i>$12</i>
+                                </li>
+                                <ul>
+                                    <li>Roasted chicken salad, cranberries, 
+                                        
+                                            extra sharp cheddar,&nbsp; paper-thin sliced apple, and house honey-mustard mayo on our toasted house ciabatta.&nbsp; Choose one side</li>
+                                </ul>
+                                <li>
+                                    <b>Junior Royale</b>
+                                    <i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>Grilled ham and swiss or&nbsp;grilled peanut butter banana sandwich served with warm raspberry jam.&nbsp; Choose one side</li>
+                                </ul>
+                                <li>
+                                    <b>Nachos Royale&nbsp;</b>
+                                    <i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>Roasted chicken and/or ground beef over tortilla chips, topped with both house nacho cheese sauce and Colby-jack cheese, jalapenos, diced tomatoes, sliced black olives, house guacamole, house salsa and sour cream</li>
+                                </ul>
+                                <li>
+                                    <b>Parfait Royale</b>
+                                    <i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>Seasonal fruit and granola parfait</li>
+                                </ul>
+                                <li>
+                                    <b>Club Salad</b>
+                                    &nbsp;<i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>
+
+                                        Tender romaine lettuce, house-made garlic croutons, candied pecans, crumbled bacon, goat cheese, dried cranberries and paper-thin sliced apples. &nbsp;Choose between house ranch or house balsamic dressings</li>
+                                </ul>
+                                <li>
+                                    <b>Sides</b>
+                                    <i>$6 each</i>
+                                </li>
+                                <ul>
+                                    <li>
+
+                                        Mashed potatoes, roasted potatoes, saut&eacute; vegetables, French fries, rice pilaf, cup of wonton soup, garden fritter (1), macaroni and cheese, macaroni salad, chop sui, glass of wine, pint of beer, ginger sesame slaw</li>
+                                </ul>
+                            </ul>
+                        </p>
+                        <h3 class="updatedDate">—Lunch Menu published Wed, Jul 6, 2022, 8:40 AM</h3>
+                        <div class="shareMenuCase w100 rightTextAlign">
+                            <a class="shareMenu">Share</a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://telegram.me/share/url?url=https://scxn.github.io/projects/theGetaway" id="shareTelegram"><img class="shareIcons p-0 m-0" alt="Share to Telegram" src="/images/telegram.png" id="telegramShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://scxn.github.io/projects/theGetaway" id="shareTumblr"><img class="shareIcons p-0 m-0" alt="Share to share to Tumblr" src="/images/tumblr.png" id="tumblrShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://www.snapchat.com/scan?attachmentUrl=https://scxn.github.io/projects/theGetaway" id="shareSnapchat"><img class="shareIcons p-0 m-0" alt="Share to Snapchat" src="/images/snapchat.png" id="snapchatShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="http://pinterest.com/pin/create/button/?url=https://scxn.github.io/projects/theGetaway" id="sharePinterest"><img class="shareIcons p-0 m-0" alt="Share to Pinterest" src="/images/pinterest.png" id="pinterestShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://news.ycombinator.com/submitlink?u=https://scxn.github.io/projects/theGetaway" id="shareHackerNews"><img class="shareIcons p-0 m-0" alt="Share to Hacker News" src="/images/hackerNews.png" id="hackerNewsShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://gab.com/compose?text=Check%20this%20out%20from%20%40SCXN%E2%80%94%0A%0AA lively frontend with rich, saturated wine-soaked colors; suitable for restaurant, lounge and nightspot homepages.%20Read%20on%3A%20&amp;url=https://scxn.github.io/projects/theGetaway%0A%0AThe%20latest%20news%20always%20at%20SCXN.io%2FNews" id="shareGab"><img class="shareIcons p-0 m-0" alt="Share to Gab" src="/images/gab.png" id="gabShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://www.facebook.com/sharer/sharer.php?u=https://scxn.github.io/projects/theGetaway" id="shareFacebook"><img class="shareIcons p-0 m-0" alt="Share to Facebook" src="/images/facebook.png" id="facebookShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="mailto:?subject=Check%20this%20out%21%20%E2%80%94%20News%20from%20SCXN&amp;body=Check%20this%20out%20from%20%40SCXN%E2%80%94%0A%0AA lively frontend with rich, saturated wine-soaked colors; suitable for restaurant, lounge and nightspot homepages.Read%20on%3A%20https://scxn.github.io/projects/theGetaway%0A%0AThe%20latest%20news%20always%20at%20SCXN.io%2FNews" id="shareEmail"><img class="shareIcons p-0 m-0" alt="Share to Email" src="/images/email.png" id="emailShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://www.blogger.com/blog_this.pyra?t=&amp;u=https://scxn.github.io/projects/theGetaway" id="shareBlogger"><img class="shareIcons p-0 m-0" alt="Share to Blogger" src="/images/blogger.png" id="bloggerShare"></a>
+                            <a class="shareTo p-0 m-0" target="_BLANK" href="https://twitter.com/intent/tweet?url=https://scxn.github.io/projects/theGetaway" id="shareTwitter"><img class="shareIcons p-0 m-0" alt="Share to Twitter" src="/images/twitter.png" id="twitterShare"></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <main class="later">
+            <section class="container-fluid menuCaseWrapper">
+                <article class="row menuCase">
+                    <div class="col-sm-6">
+                        <h1>Breakfast</h1>
+                        <p>
+                            <h2>6a&mdash;12p</h2>
+                            <ul>
+                                <li>
+                                    <b>Scrambler</b>
+                                    <i>$17</i>
+                                </li>
+                                <ul>
+                                    <li>Choose from meats, cheeses and vegetables to scramble into six farm fresh eggs.&nbsp; Pick three sides</li>
+                                </ul>
+                                <li>
+                                    <b>Biscuits &amp; Gravy</b>
+                                    <i>$12</i>
+                                </li>
+                                <ul>
+                                    <li>Three biscuits smothered in sausage gravy and six eggs your way.&nbsp; Pick two sides</li>
+                                </ul>
+                                <li>
+                                    <b>Junior</b>
+                                    <i>$9</i><br/></li>
+                                <ul>
+                                    <li>Three eggs your way. Pick two sides<br/></li>
+                                </ul>
+                                <li>
+                                    <b>Fried Rice</b>
+                                    <i>$7</i>
+                                </li>
+                                <ul>
+                                    <li>With sausage, bacon, mixed vegetables and three eggs</li>
+                                </ul>
+                                <li>
+                                    <b>Parfait Royale</b>
+                                    <i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>Seasonal fruit and granola parfait</li>
+                                </ul>
+                                <li>
+                                    <b>Oatmeal 
+                                            
+                                            Royale</b>
+
+                                    <i>$6</i>
+                                </li>
+                                <ul>
+                                    <li>Big bowl of oatmeal topped with brown sugar, cinnamon, candied fruits and cream</li>
+                                </ul>
+                                <li>
+                                    <b>Sides</b>&nbsp;<i>$3 each</i>
+                                </li>
+                                <ul>
+                                    <li>Toast (3), biscuits (2), hash browns, seasonal 
+                                            
+                                            saut&eacute;
+                                            
+                                            vegetables, fruit cup, parfait, Belgian waffle, pancakes (2), French toast (1), cottage cheese, Ice cream, bacon, sausage, biscuit with gravy, oatmeal, French fries, eggs (3), white rice</li>
+                                </ul>
+                            </ul>
+                        </p>
+                        <h3 class="updatedDate">—Breakfast Menu published Mon, Jul 4, 2022, 6:02 PM</h3>
+                    </div>
+                    <div class="col-sm-6 redLine">
+                        <h1>Dinner
+                        </h1>
+                        <p>
+                            <h2>6p&mdash;9:3p</h2>
+                            <ul>
+                                <li>
+                                    <b>Salisbury Steak</b>
+                                    <i>$21</i>
+                                </li>
+                                <ul>
+                                    <li>Two 1/3 lbs ground chuck with onion and garlic patty steaks cooked to your liking, slathered in our house buttered brown gravy. &nbsp;Choose three sides. Extra patty steak $5/each &nbsp;
+                                    </li>
+                                </ul>
+                                <li>
+                                    <b>Fried Fish</b>
+                                    <i>$17</i>
+                                </li>
+                                <ul>
+                                    <li>Three cod fillets beer battered and deep fat fried to light crispy golden perfection. &nbsp;Choose three sides. &nbsp;Extra pieces $4/each</li>
+                                </ul>
+                                <li>
+                                    <b>Chicken Club Salad</b>
+                                    <i>$17</i>
+                                </li>
+                                <ul>
+                                    <li>Deviled roast chicken salad tossed with tender romaine lettuce, house-made garlic croutons, candied pecans, crumbled bacon, goat cheese, dried cranberries and paper-thin sliced apples. &nbsp;Choose between house ranch or house balsamic dressings. &nbsp;Choose three sides. &nbsp;Extra meat/cheese $4</li>
+                                </ul>
+                                <li>
+                                    <b>Ham Fritters</b>
+                                    <i>$15</i>
+                                </li>
+                                <ul>
+                                    <li>Six mouthwatering ham and cheddar cheese joy bombs. &nbsp;Choose two sides</li>
+                                </ul>
+                                <li>
+                                    <b>Garden Fritters</b>
+                                    <i>$15</i>
+                                </li>
+                                <ul>
+                                    <li>Six golden brown, crispy and irresistible morsels showing off our homestead&rsquo;s seasonal garden bounty. &nbsp;Choose two sides</li>
+                                </ul>
+                                <li>
+                                    <b>Wonton Soup</b>
+                                    <i>$9</i>
+                                </li>
+                                <ul>
+                                    <li>Enormous piping hot bowl of signature, house-made wontons swimming in a generous helping of our rich and hearty stock</li>
+                                </ul>
+                                <li>
+                                    <b>Sides</b>
+                                    <i>$6 each</i>
+                                </li>
+                                <ul>
+                                    <li>Mashed potatoes, roasted potatoes, saut&eacute; vegetables, French fries, rice pilaf, cup of wonton soup, garden fritter (1), macaroni and cheese, macaroni salad, chop sui, glass of wine, pint of beer, ginger sesame slaw</li>
+                                </ul>
+                            </ul>
+                        </p>
+                        <h3 class="updatedDate">—Dinner Menu published Tue, Jul 12, 2022, 2:53 PM</h3>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <main class="container-fluid sW thanks p-0">
+            <section>
+                <article class="wrapper superCenterer row">
+                    <div class="item thankYouCase col-md-6" id="item">
+                        <h5>Remain in-touch</h5>
+                        <h4 class="tW">Follow, subscribe, like and share!</h4>
+                        <h2>Select social media</h2>
+                        <div>
+                            <a class="tumblr" target="_BLANK" href="https://scxn-blog.tumblr.com"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/MzcphckOtgNcfaCWWMTFWTqW" alt="tumblr"></a>
+                            <a class="telegram" target="_BLANK" href="https://t.me/starbucks/62"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/jpDAaUblQOXchSJzPKHXRlpS" alt="telegram"></a>
+                            <a class="gab" target="_BLANK" href="https://www.gab.com/a"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/OItnYjzufLGGJkjeNfKBnPVF" alt="gab"></a>
+                            <a class="facebook" target="_BLANK" href="https://www.facebook.com/Starbucks"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/NMejiZcQHtlvCztevoxgbdwU" alt="facebook"></a>
+                            <a class="email" target="_BLANK" href="mailto:k_lavatai@yahoo.com"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/hakXcKyERGfNQzQdLCdJvhwp" alt="email"></a>
+                            <a class="twitter" target="_BLANK" href="https://twitter.com/home"><img class="socials" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/YJGFsTofAbmgHYoTMyybZBwL" alt="twitter"></a>
+                        </div>
+                        <h2><br><a href="mailto:kai@scxn.io">theGetaway@scxn.io<br></a>
+                            <a href="tel:+13604775426">(360) 477-5426</a>
+                        </h2>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <main class="container-fluid sW thanks p-0" style="background-image: url(https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80); background-size: cover;background-position: 50% 50%;background-blend-mode: lighten;">
+            <section>
+                <article class="wrapper superCenterer row">
+                    <div class="item thankYouCase textShadow col-md-6" id="item">
+                        <h1 class="thanksTitle centerTextAlign">Thank you!</h1>
+                        <p class="thanksStatement">It’s such a pleasure delivering the best food to our guests.  Their presence enriches our day-to-day in an overflowing manner.  We wish to say thank you to all of our guests.  The future holds all of life’s goodness in our friendship.  We look forward to next time!  Thank you.</p><img class="reviewCaseFlankLeft" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/vtuyHjVabFmwTrXBzJiFtGLd"><img class="reviewCaseFlankRight" src="https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/vtuyHjVabFmwTrXBzJiFtGLd"><a href="https://waterburyhill.tumblr.com/post/688770397314940929">
+                            <h6 class="more" id="more">Continue reading →</h6>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <section class="superCenterer w100">
+                <article class="row w100 max1120">
+                    <div class="superCenterer col-sm-12">
+                        <h1 class="zPMb mt-5">
+                            <i class="--f4 textSize48">The</i>
+                            <span class="textLogofy textSize48">Getaway</span>
+                        </h1>
+                        <h3 class="--f5 zPMt">
+                            <i>only at
+                            </i>SCXN!</h3>
+                        <small class="centerTextAlign">
+                            <h3 class="textSize15 mb-4">Monday — Sunday<br>6a - 3p / 6p - 9:30p |&shy;
+                                <a href="tel:+13604775426">Tel: (360) 477-5426</a>
+                            </h3>
+                        </small>
+                    </div>
+                    <gutter class="col-sm-1 block"><img class="footerCardImg footerCardKnifeAndSpoon" src="/projects/theGetaway/images/knifeAndSpoon.png"></gutter>
+                    <item class="col-sm-3 footerCard block">
+                        <h4 class="textShadow tW">Properties</h4>
+                        <ul class="footerList">
+                            <li>
+                                <a href="https://www.scxn.io">SCXN Web Design & Publishing</a>
+                            </li>
+                            <li>
+                                <a href="https://scxn.github.io/projects/lebistro">Le Bistro</a>
+                            </li>
+                            <li>
+                                <a href="https://scxn.github.io/projects/contemporaryConsultant">Contemporary Consultant</a>
+                            </li>
+                            <li>
+                                <a href="https://scxn.github.io/projects">SCXN Projects</a>
+                            </li>
+                            <li>
+                                <a href="https://scxn.github.io/solution">Solution 1-7</a>
+                            </li>
+                            <li>
+                                <a href="https://2dzoo.tumblr.com">2-D Zoo</a>
+                            </li>
+                            <li>
+                                <a href="https://www.scxn.io/News">SCXN News</a>
+                            </li>
+                        </ul>
+                    </item>
+                    <item class="col-sm-3 footerCard block">
+                        <h4 class="textShadow tW">What's on The Menu?</h4>
+                        <ul class="footerList">
+                            <li>
+                                <a href="/projects/theGetaway/menus/breakfast">Breakfast</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/lunch">Lunch</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner">Dinner</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#appetizers">Appetizers</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#wine">Wine</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#beer">Beer</a>
+                            </li>
+                            <li>
+                                <a href="/projects/theGetaway/menus/dinner#desserts">Dessert</a>
+                            </li>
+                        </ul>
+                    </item>
+                    <item class="col-sm-3 footerCard block">
+                        <h4 class="textShadow tW">Remain in-touch</h4>
+                        <ul class="footerList">
+                            <li>
+                                <a href="https://scxn-blog.tumblr.com/">Tumblr</a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/starbucks/62">Telegram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.gab.com/a">Gab</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Starbucks">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="mailto:k_lavatai@yahoo.com">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">Twitter</a>
+                            </li>
+                        </ul>
+                    </item>
+                    <gutter class="col-sm-1 block"><img class="footerCardImg footerCardFork" src="/projects/theGetaway/images/fork.png"></gutter>
+                    <aside class="col-sm-12">
+                        <h2 class="copyrightStatement textSize9 mt-3" id="copyrightStatement">The Getaway Bar & Grill &shy;| Olympic Peninsula, WA, USA<br>Copyright 2022 SCXN.&shy; All rights reserved.</h2>
+                    </aside>
+                </article>
+            </section>
+        </footer>
+        <section class="ultimate g-0 p-0 w1 diminutive m-0 p-0">
+            <a class="tW ultimateLink noDecoration w1 h100 textAlignCenter p-0 m-0 pb-2 flex flexAlignCenter flexJustifyCenter" href="https://www.scxn.io/Solution">
+                <span class="f2 diminutive">An
+                    <b class="diminutive f5">SC<i class="lower" style="font-size: calc(1em + .6em);">x</i>N
+                    </b>Web Solution</span>
+            </a>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/projects/theGetaway/javascripts/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

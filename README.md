@@ -9,7 +9,7 @@
 
 __Areas of expertise:__
 - Web design / frontend
-- Art & graphics
+- Typesetting, art & graphics
 - Book arts & paper craft
 
 __Stack:__ CSS | HTML | JS | Bootstrap | jQuery | Pug | Handlebars | Node.js | Express.js | Mongoose  | PHP

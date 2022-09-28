@@ -14,9 +14,9 @@ SCXN WEB DESIGN & PUBLISHING | BOILERPLATE CSS
 :root{
 /*colors*/
 	--cF: #1f1928;				--cB: #fffbed;
-	--cA: #33303d;				--cH: #a7a414;
-	--c1: #000000;  			--c2: #291f19;
-	--c3 :#2a2929;				--c4: #362921;
+	--cA: #33303d;				--cH: #ffa242;
+	--c1: #3f516e;  			--c2: #19202c;
+	--c3 :#2a2929;				--c4: #414141;
 	--c5: #ff1e00;				--c6: #6e71a5;
 /*fonts*/
 	--f1: normal normal lighter 17pt/1em 'Playfair Display', Times, serif;
@@ -288,7 +288,7 @@ ul.nav.grid{
 .tW{color: white;}	.tB{color: black;}
 /*backGround flip white OR black**/
 .sB{background-color: var(--c3);}
-.bB{background-color: rgb(0, 0, 0);}/*blackBack..*/
+.bB{background-color: black;}/*blackBack..*/
 .wB{background-color: white;}/*whiteBack..*/
 .sWB{background-color: rgba(223, 201, 201, 0.6);}/*shearWhiteBackground*/
 .sBB{background-color: rgba(0, 0, 0, 0.81);}/*shearBlackBackground*/

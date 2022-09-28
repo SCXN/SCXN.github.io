@@ -1,0 +1,12 @@
+.ultimate{
+    display: block;
+    z-index: 999;
+    margin-bottom: 4.44em !important;
+}
+a.tW:hover{
+    color: white !important;
+}
+a.tW:hover{
+    background-color: transparent !important;
+    color: var(--cH) !important;
+}

@@ -8,8 +8,8 @@
 **Ｔ**he majority of our clients could be characterized in two ways: First, our clients need a website that is functional and contemporary, that stands out from the hurd, *and* is easy to use (from the client's perspective "easy to use" generally means a website that is easy to update).  Second, our clients like a 360° identity that incorporates an arsenal of print marketing of uncommonly fine quality that matches thier website.
 
 __Areas of expertise:__
-- Frontend development
-- Art & graphics
+- Web design / frontend
+- Typesetting, art & graphics
 - Book arts & paper craft
 
 __Stack:__ CSS | HTML | JS | Bootstrap | jQuery | Pug | Handlebars | Node.js | Express.js | Mongoose  | PHP
